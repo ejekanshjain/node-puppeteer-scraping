@@ -1,0 +1,25 @@
+{
+    "name": "node-puppeteer-scraping",
+    "version": "1.0.0",
+    "description": "Simple Scraping with puppeteer which goes to a Url and returns HTML content of that page.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ejekanshjain/node-puppeteer-scraping.git"
+    },
+    "keywords": [],
+    "author": "Ekansh Jain",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ejekanshjain/node-puppeteer-scraping/issues"
+    },
+    "homepage": "https://github.com/ejekanshjain/node-puppeteer-scraping#readme",
+    "dependencies": {
+        "cors": "latest",
+        "express": "latest",
+        "puppeteer": "latest"
+    }
+}
