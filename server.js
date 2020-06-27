@@ -11,7 +11,12 @@ app.get('/', async (req, res) => {
         return res.status(400).json({ status: 400, message: 'url required in query params!' })
     let browser
     try {
-        browser = await puppeteer.launch({ args: ['--no-sandbox'] })
+        browser = await puppeteer.launch({
+            args: [
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+            ]
+        })
     } catch (err) {
         console.log('\x1b[31m%s\x1b[0m', err)
         return res.status(500).json({ status: 500, message: 'Failed to launch browser instance.' })
