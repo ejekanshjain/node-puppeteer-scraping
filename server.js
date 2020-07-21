@@ -15,6 +15,7 @@ app.get('/', async (req, res) => {
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
+                '--ignore-certificate-errors',
             ]
         })
     } catch (err) {
